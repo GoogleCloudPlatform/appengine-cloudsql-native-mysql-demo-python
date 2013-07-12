@@ -1,47 +1,12 @@
-## Project name
-
-A description of what this project does and who it serves.
-
-Include authorship, support contact and release information.
-
-
-## Project setup, installation, and configuration
-
-How do I, as a developer, start working on the project?
-
-1. What dependencies does it have (where are they expressed) and how do I install them?
-1. Can I see the project working before I change anything?
-
-
-## Testing
-
-How do I run the project's automated tests?
-
-* Unit Tests
-
-* Integration Tests
-
+This is an example program showing how to use the native MySQL connections from Google App Engine to Google Cloud SQL.
 
 ## Deploying
 
-### How to setup the deployment environment
+1. edit the 'application: your-app-id' from app.yaml to point to an app you control. Optionally, edit the 'version: 1' to create the desired version.
 
-* Addons, packages, or other dependencies required for deployment.
-* Required environment variables or credentials not included in git.
-* Monitoring services and logging.
+2. edit the `unix_socket` from `app.py` and `app_mysql.py` to point to a Cloud SQL instance that is associated with the app you used at step 1.
 
-### How to deploy
-
-
-## Troubleshooting & useful tools
-
-### Examples of common tasks
-
-e.g.
-* How to make curl requests while authenticated via oauth.
-* How to monitor background jobs.
-* How to run the app through a proxy.
-
+3. Upload the app: `appcfg.py update .`
 
 ## Contributing changes
 
